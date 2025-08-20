@@ -25,12 +25,12 @@ num=2
 for i in range(1,21):
     print(num,"X",i,"=",num*i)
 # 7
-num = int(input("Enter a number:"))
-while num > 0:
-    print("It is postive number")
-    if num <= 0:
-        print("It is negative number")
-        break
+# num_1 = int(input("Enter a number:"))
+# while num_1 > 0:
+#     print("It is postive number")
+#     if num_1 <= 0:
+#         print("It is negative number")
+#         break
 #5
 # choosing menu and printing
 while True:
@@ -50,6 +50,17 @@ while True:
         print('----exiting-------')
         break
 # TASK 3,4,7----------------------------
+# Print all numbers from 1 to 100 that are divisible by 3 and 5 in for loop
+# start = 1
+# while start <= 100:  
+#     if start % 3 == 0 or start % 5 == 0:
+#         print(start)
+#     start += 1  
+for i in range(1,101):
+    if i % 3 == 0 or i % 5 == 0:
+        print(i)
+
+
 
 
 
