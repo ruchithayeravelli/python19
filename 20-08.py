@@ -60,8 +60,17 @@ for i in range(1,101):
     if i % 3 == 0 or i % 5 == 0:
         print(i)
 
-
-
-
+##Implement a basic login system where the user has three attempts to enter the correct password using a loop.
+a = 3
+while a > 0:
+    n = input("Enter a password:")
+    if n == '2105':
+        print("Login succeesfully completed")
+        break
+    else:
+        a -= 1
+        print('attempt failed',a)
+        if  a == 0:
+            print('Account locked')
 
 
