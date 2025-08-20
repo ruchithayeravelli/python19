@@ -17,4 +17,3 @@ num  = int(input("Enter a Number: "))
 num1 = int(input("Enter a Number: "))
 num2 = int(input("Enter a Number: "))
 check_triangle(num,num1,num2)
-    
