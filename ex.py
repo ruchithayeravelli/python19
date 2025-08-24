@@ -239,7 +239,46 @@ def natural(n):
 n =int(input('Enter the n:'))
 res = natural(n)
 print(res)
+# ORRRRRRRRRRRRRRRRR
+# Write a program to print the sum of the first  n  natural numbers. 
+#   (n*n+1/ 2)
+def natural(n):
+    for i in range (n,n + 1):
+        sum = (n * (n + 1) / 2)
+    return int(sum)
+n = 4
+res = natural(n)
+print(res)
 # 3333333333333333333333333333333333
-
-    
-
+# Print all even numbers between 1 and 50 using a  while loop. 
+start = 1
+while start <= 50:
+    if start % 2 == 0:
+        print(start,end=" ")
+    start += 1
+#44444444444444444444444444444444444444
+# # Write a program to display the multiplication table of a given number. First 20 
+n = 2
+print('MULTILICATION TABLE')
+for i in range (1,21):
+     print(n,'X',i,'=',n * i)
+# 555555555555555555555555555555555555555
+# # Rverse a number using a  while  loop. 
+# 1.  Also can we get the sum of all the digits. 
+res = '12345A'   #It is in string so do not convert to string again
+#  if string given in int form so convert to string
+print((res)[::-1]) 
+# ORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+# Rverse a number using a  while  loop. 
+# 1.  Also can we get the sum of all the digits. 
+n = int(input('Enter the number:'))
+rev,sum = 0 ,0
+while n > 0:
+    digit = n % 10         # prints last digit
+    rev = rev * 10 + digit # prints the last digit 
+    sum += digit           # sum the digit
+    n //= 10
+print(rev)
+print(sum)
+# 66666666666666666666666666666666666
+# 
