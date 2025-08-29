@@ -256,8 +256,8 @@ while start <= 50:
     if start % 2 == 0:
         print(start,end=" ")
     start += 1
-#44444444444444444444444444444444444444
-# # Write a program to display the multiplication table of a given number. First 20 
+# 44444444444444444444444444444444444444
+# Write a program to display the multiplication table of a given number. First 20 
 n = 2
 print('MULTILICATION TABLE')
 for i in range (1,21):
@@ -281,4 +281,108 @@ while n > 0:
 print(rev)
 print(sum)
 # 66666666666666666666666666666666666
-# 
+# a program to count the number of digits in a given number using a  while  loop. 
+n = int(input('Enter the number:'))
+count = 0
+while n > 0:
+    n //= 10
+    count += 1
+print('number of digits:',count)
+# 77777777777777777777777777777777777\
+# Write a program that keeps asking the user to enter numbers until they enter a negative number. Use a  while  loop
+num = int(input("Enter a number: "))
+while num >= 0:   # loop will run as long as the number is not negative
+    print("You entered:", num)
+    num = int(input("Enter another number: "))  # ask again
+print("You entered a negative number. Program stopped.")
+# b.  Medium Questions: 
+# 111111111111111111111111111111
+# 444444444444444444444444444444
+# Print all numbers from 1 to 100 that are divisible by 3 and 5 using a  for  loop. 
+n = int(input('Enter the number:'))
+for i in range (1,n+1):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i,'Its divisible by 3,5')
+# 555555555555555555555555555555
+# # plement a menu-driven program where the user can 
+# choose to: 
+# 1.  Find the square of a number. 
+# 2.  Find the cube of a number. 
+# 3.  Exit. 
+while True:
+    print('Menu-driven:')
+    print(' 1.square',"\n",'2.cube',"\n",'3.Exit ')
+    number = input('Enter the number (1-3) :')
+    if  number == '1' or number == 'square':
+        n = int(input('Enter the number:'))
+        print('Its square:',n * n)
+    elif number == '2' or number == 'cube':
+        n = int(input('Enter the number:'))
+        print('Its cube :',n * n * n)
+    else:
+        print('exit.........')
+        break
+# 666666666666666666666666666666666666
+#1. Print the first 10 terms of the Fibonacci series using a for loop
+
+# 👉 Fibonacci series: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ...
+# (Each term = sum of the previous two terms)
+
+# Code:
+# Fibonacci series using for loop
+a, b = 0, 1   # first two terms
+print("First 10 terms of Fibonacci series:")
+
+for i in range(10):   # loop runs 10 times
+    print(a, end=" ")  # print current number
+    a, b = b, a + b    # update values for next term
+
+# Explanation:
+# Start with a=0, b=1.
+# Loop 10 times.
+# Print a → then update (a becomes old b, b becomes sum of old a+b).
+# Output → 0 1 1 2 3 5 8 13 21 34.
+# 2. Check if a given number is a prime number using a for loop
+# 👉 A prime number is a number greater than 1 that is divisible only by 1 and itself.
+# Code:
+num = int(input("Enter a number: "))
+
+if num > 1:  # prime numbers are greater than 1
+    for i in range(2, num):   # check divisibility from 2 to num-1
+        if num % i == 0:
+            print(num, "is NOT a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is NOT a prime number")
+
+# Explanation:
+# If number ≤ 1 → not prime.
+# Else, check divisibility by numbers from 2 to num-1.
+# If divisible → not prime.
+# If no divisor found → prime.
+# 👉 Example:
+# Input: 7 → output: "7 is a prime number".
+# Input: 9 → divisible by 3 → "9 is NOT a prime number".
+# 3. Calculate factorial of a number using a while loop
+# 👉 Factorial of n = n × (n-1) × (n-2) × ... × 1
+# Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
+# Code:
+num = int(input("Enter a number: "))
+fact = 1
+i = 1
+while i <= num:
+    fact = fact * i
+    i += 1
+print("Factorial of", num, "is:", fact)
+
+# Explanation:
+# Start with fact=1.
+# Multiply fact with numbers from 1 to num using a while loop.
+# Print result.
+# 👉 Example:
+# Input: 5 → output: Factorial of 5 is: 120
+    
+
+    
