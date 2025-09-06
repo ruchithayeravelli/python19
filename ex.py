@@ -27,6 +27,9 @@ def odd_even(num):
 num = int(input("Enter a Number:"))
 res = odd_even(num)
 print(res)
+###############
+a = 19
+print('even') if a % 2 == 0 else print('odd')
 #ORRRRRRRR
 def odd_even(num):
     return 'Even' if num % 2 == 0 else 'Odd'
