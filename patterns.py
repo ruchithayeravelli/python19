@@ -70,3 +70,16 @@ for  i in range(1,n + 1):
 # Example: if n = 5, then " "*(5-2) = " "*3 → 6 spaces.
 # "*" step-3
 # Adds the last star at the end of the line.
+#         * 
+#       * * * 
+#     * * * * * 
+#   * * * * * * * 
+# * * * * * * * * * 
+n = 5
+for i in range(1,n+1):
+    # print(" "*(n-i) + "*"*(2*i-1))
+    for j in range(n - (i)):
+        print(" ",end=" ")
+    for k in range(2*i-1):
+        print("*",end=" ")
+    print()

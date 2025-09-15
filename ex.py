@@ -388,4 +388,143 @@ print("Factorial of", num, "is:", fact)
 # Input: 5 → output: Factorial of 5 is: 120
     
 
+
+############################################################################# Fibonacci sequence
+# 0 1 1 2 3 5 8 13 21
+n = 10
+a = 0
+b = 1
+print("Fibonacci sequence:")
+# print(a,b,end=" ")
+# for i in range(2,10):
+#     temp = a + b
+#     print(temp, end =" ")
+#     a = b
+#     b = temp
+for i in range(0,10):
+    print(a,end=" ")
+    a, b = b, a + b
+
+################################################################# Check if a string is a palindrome.
+# ✅ What is a palindrome?
+
+# A palindrome is a word, phrase, or number that reads the same forwards and backwards.
+# Examples:
+#  if we reverse the string it will get sama
+
+# "madam" → palindrome
+
+# "racecar" → palindrome
+
+# "hello" → not a palindrome
+# Difference between = and ==
+
+# = → assignment operator (used to store a value in a variable).
+
+# == → comparison operator (used to check if two values are equal).
+
+x = 10       # assignment
+print(x)     # 10
+
+print(x == 10)   # True (comparison)
+print(x == 5)    # False
+# ###########################################################################
+
+def  string(s):
+    s = s.lower()
+    return s == s[::-1]
+print(string('Madav'))
+print(string('55'))
+
+
+
+###################################################
+#  first string ni lower cases loo convert cheyali then
+#  count cheyali kabatti count thisukundham
+#   first loop loo  first char check cheyali  in second loop nuchi if it is there then it counts
+def count_vowels(s):
+    vowels = 'aeiou'
+    s = s.lower()
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+print(count_vowels('Hello World'))
+
+
+
+########################################################################### oka list loo duplicate values alla print cheyali
+num = [1,2,1,3,4,5,5,1]
+d =[]
+u = []
+for i in num:
+    if num.count(i)>1:
+        if i not in d:
+            d.append(i)
+    else: u.append(i)
+print("duplicate :", *d)
+print("unique: ",*u)
+
+
+# duplicate : 1 5
+# unique:  2 3 4
+
+# using dictttt
+num = [1,2,1,3,4,5,5,1]
+d = []
+u = []
+dic = {}
+for i in num:
+    if i not in dic:
+        dic[i] = 1
+    else: dic[i] += 1
+for i in dic:
+   if dic[i] > 1:
+      d.append(i)
+   else: u.append(i)
+print("duplicate :", *d)
+print("unique: ",*u)
+########################################printing reverse 
+num = [1,1,1,2,3,4,5,5]
+##################
+print(*num[::-1])
+#####################
+r = [ ]
+for i in range(len(num)-1,-1,-1):
+    r.append(num[i])
+print(*r)
+######################
+i = 0
+j = len(num)-1
+while i < j:
+    num[i], num[j] = num[j],num[i]
+    j -= 1
+    i += 1
+print(*num)
+#################
     
+    
+###################small and big
+    
+    
+# print the smallest and largest number in a list
+l = [100,1000,999,99,9,10]
+small = l[0] #folat("-inf")
+big = l[0]   #folat("inf")
+#  output: 9 1000
+for i in l:
+   if i > big:
+       big = i
+   elif i < small:
+       small = i
+    
+print(small,big)
+   
+
+   ###############################
+
+       
+       
+       
+     

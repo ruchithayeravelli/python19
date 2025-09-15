@@ -12,3 +12,4 @@ list1 = list1[3 : ] + list1[0: k]
 print(list1)
 
 # Lambda functions
+# https://www.geeksforgeeks.org/css/top-10-projects-for-beginners-to-practice-html-and-css-skills/
